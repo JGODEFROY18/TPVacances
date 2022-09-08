@@ -21,9 +21,9 @@
         public function seConnecter($login,$pass){
             $RequetSql = "SELECT * FROM 'User
             WHERE 
-            'login' = '".$_POST['login]."'
+            'login' = '".$_POST['login']."'
             AND
-            'pass' = '".$_POST['passs']."';
+            'pass' = '".$_POST['pass']."'";
 
             $resultat = $pdo->query($RequetSql); //resultat sera de type pdoStatement
             if ($resultat->rowCount()>0){
